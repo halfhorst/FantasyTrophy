@@ -2,6 +2,7 @@
     "name": "fantasy-trophy",
     "version": "1.0.0",
     "description": "A virtual home for your fantasy league trophy.",
+    "private": true,
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -12,7 +13,7 @@
         "type": "git",
         "url": "git+https://github.com/halfhorst/FantasyTrophy.git"
     },
-    "license": "GNU GPLv3",
+    "license": "GPL-3.0-or-later",
     "bugs": {
         "url": "https://github.com/halfhorst/FantasyTrophy/issues"
     },
