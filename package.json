@@ -1,0 +1,26 @@
+{
+    "name": "fantasy-trophy",
+    "version": "1.0.0",
+    "description": "A virtual home for your fantasy league trophy.",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "prettier --check ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/halfhorst/FantasyTrophy.git"
+    },
+    "license": "GNU GPLv3",
+    "bugs": {
+        "url": "https://github.com/halfhorst/FantasyTrophy/issues"
+    },
+    "homepage": "https://github.com/halfhorst/FantasyTrophy#readme",
+    "dependencies": {
+        "next": "^10.0.9",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "devDependencies": {}
+}
