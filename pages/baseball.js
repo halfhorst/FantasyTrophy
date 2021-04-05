@@ -34,8 +34,8 @@ function Baseball() {
       })
         .then((response) => response.json())
         .then((data) => {
-          // console.log(data.divisions[0].teams);
-          let teams = data.divisions[0].teams;
+          let teams = data.divisions[0].teams[0].name;
+          console.log(teams);
           return teams;
         })
         .catch((error) => {
