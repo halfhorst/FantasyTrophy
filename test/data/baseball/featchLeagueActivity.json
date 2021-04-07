@@ -1,0 +1,119 @@
+{
+  "items": [
+    {
+      "timeEpochMilli": "1617378441000",
+      "settings": {
+        "commish": {
+          "id": 139822,
+          "name": "Lonestar Tallboys: Reloaded",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139822_1_150x150.jpg",
+          "initials": "LT"
+        },
+        "description": "Lonestar Tallboys: Reloaded has made a change to the lineup locking rules."
+      }
+    },
+    {
+      "timeEpochMilli": "1617333882000",
+      "settings": {
+        "description": "The 2021 schedule has been automatically generated."
+      }
+    },
+    {
+      "timeEpochMilli": "1617332011000",
+      "settings": { "description": "The draft order has been randomly generated." }
+    },
+    {
+      "timeEpochMilli": "1617301731000",
+      "draftTime": {
+        "draftTimeEpochMilli": "1617332400000",
+        "commish": {
+          "id": 139822,
+          "name": "Lonestar Tallboys: Reloaded",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139822_1_150x150.jpg",
+          "initials": "LT"
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1617250215000",
+      "draftTime": {
+        "draftTimeEpochMilli": "1617332400000",
+        "commish": {
+          "id": 139822,
+          "name": "Lonestar Tallboys: Reloaded",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139822_1_150x150.jpg",
+          "initials": "LT"
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1616911168000",
+      "draftTime": {
+        "draftTimeEpochMilli": "1617246000000",
+        "commish": {
+          "id": 139822,
+          "name": "Lonestar Tallboys: Reloaded",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139822_1_150x150.jpg",
+          "initials": "LT"
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1616449748000",
+      "settings": {
+        "commish": {
+          "id": 139822,
+          "name": "Lonestar Tallboys: Reloaded",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139822_1_150x150.jpg",
+          "initials": "LT"
+        },
+        "description": "Lonestar Tallboys: Reloaded has made a change to the scoring rules."
+      }
+    },
+    {
+      "timeEpochMilli": "1616449697000",
+      "draftTime": {
+        "draftTimeEpochMilli": "1616958000000",
+        "commish": {
+          "id": 139822,
+          "name": "Lonestar Tallboys: Reloaded",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139822_1_150x150.jpg",
+          "initials": "LT"
+        }
+      }
+    },
+    {
+      "timeEpochMilli": "1616441102000",
+      "settings": {
+        "commish": {
+          "id": 139822,
+          "name": "Lonestar Tallboys: Reloaded",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139822_1_150x150.jpg",
+          "initials": "LT"
+        },
+        "description": "Lonestar Tallboys: Reloaded has made a change to the scoring rules."
+      }
+    },
+    {
+      "timeEpochMilli": "1616440674000",
+      "settings": {
+        "commish": {
+          "id": 139822,
+          "name": "Lonestar Tallboys: Reloaded",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139822_1_150x150.jpg",
+          "initials": "LT"
+        },
+        "description": "Lonestar Tallboys: Reloaded has upgraded the league with \u003ci class\u003d\"icon-ad-free fa fa-bolt left-icon\"\u003e\u003c/i\u003e\u003cspan class\u003d\"brand-edge\"\u003eAd-Free\u003c/span\u003e \u003cspan class\u003d\"nowrap\"\u003e\u003ci class\u003d\"icon-edge\"\u003e\u003c/i\u003e\u003cspan class\u003d\"brand-edge\"\u003eEDGE\u003c/span\u003e\u003c/span\u003e"
+      }
+    }
+  ],
+  "resultTotal": 10
+}

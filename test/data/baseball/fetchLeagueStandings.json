@@ -1,0 +1,353 @@
+{
+  "divisions": [
+    {
+      "id": 68303,
+      "name": "Division 1",
+      "teams": [
+        {
+          "id": 139822,
+          "name": "Lonestar Tallboys: Reloaded",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139822_1_150x150.jpg",
+          "recordOverall": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "recordPostseason": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "pointsFor": { "formatted": "0" },
+          "pointsAgainst": { "formatted": "0" },
+          "streak": { "formatted": "-" },
+          "waiverPosition": 5,
+          "owners": [
+            {
+              "id": 1402300,
+              "displayName": "rhroberts",
+              "lastSeen": "1617770551000",
+              "initials": "R",
+              "lastSeenIso": "2021-04-07T04:42:31Z"
+            }
+          ],
+          "initials": "LT"
+        },
+        {
+          "id": 139825,
+          "name": "petermculp\u0027s Team",
+          "sport": "MLB",
+          "recordOverall": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "recordPostseason": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "pointsFor": { "formatted": "0" },
+          "pointsAgainst": { "formatted": "0" },
+          "streak": { "formatted": "-" },
+          "waiverPosition": 6,
+          "owners": [
+            {
+              "id": 1402315,
+              "displayName": "petermculp",
+              "lastSeen": "1616442721000",
+              "initials": "P",
+              "lastSeenIso": "2021-03-22T19:52:01Z"
+            }
+          ],
+          "newItemCounts": { "activityUnread": 8 },
+          "initials": "PT",
+          "chatChannel": "/chats/MLB/leagues/24736/teams-139822-139825"
+        },
+        {
+          "id": 139829,
+          "name": "The Montucky Cold Snacks",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139829_1_150x150.jpg",
+          "recordOverall": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "recordPostseason": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "pointsFor": { "formatted": "0" },
+          "pointsAgainst": { "formatted": "0" },
+          "streak": { "formatted": "-" },
+          "waiverPosition": 4,
+          "owners": [
+            {
+              "id": 1402346,
+              "displayName": "tjoshansen",
+              "lastSeen": "1617664899000",
+              "initials": "T",
+              "lastSeenIso": "2021-04-05T23:21:39Z"
+            }
+          ],
+          "newItemCounts": { "activityUnread": 8 },
+          "initials": "TM",
+          "chatChannel": "/chats/MLB/leagues/24736/teams-139822-139829"
+        },
+        {
+          "id": 139897,
+          "name": "dmarc3\u0027s Team",
+          "sport": "MLB",
+          "recordOverall": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "recordPostseason": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "pointsFor": { "formatted": "0" },
+          "pointsAgainst": { "formatted": "0" },
+          "streak": { "formatted": "-" },
+          "waiverPosition": 2,
+          "owners": [
+            {
+              "id": 1403024,
+              "displayName": "dmarc3",
+              "lastSeen": "1617244548000",
+              "initials": "D",
+              "lastSeenIso": "2021-04-01T02:35:48Z"
+            }
+          ],
+          "newItemCounts": { "activityUnread": 6 },
+          "initials": "DT",
+          "chatChannel": "/chats/MLB/leagues/24736/teams-139822-139897"
+        },
+        {
+          "id": 140115,
+          "name": "King Dinger",
+          "sport": "MLB",
+          "logoUrl": "https://s3.amazonaws.com/fleaflicker/t140115_1_150x150.jpg?v\u003d1617681596000",
+          "recordOverall": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "recordPostseason": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "pointsFor": { "formatted": "0" },
+          "pointsAgainst": { "formatted": "0" },
+          "streak": { "formatted": "-" },
+          "waiverPosition": 3,
+          "owners": [
+            {
+              "id": 1404875,
+              "displayName": "KingDinger",
+              "lastSeen": "1617724642000",
+              "initials": "K",
+              "lastSeenIso": "2021-04-06T15:57:22Z"
+            }
+          ],
+          "initials": "KD",
+          "chatChannel": "/chats/MLB/leagues/24736/teams-139822-140115"
+        },
+        {
+          "id": 140146,
+          "name": "BigCurt\u0027s Team",
+          "sport": "MLB",
+          "recordOverall": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "recordPostseason": {
+            "winPercentage": { "formatted": ".000" },
+            "formatted": "0-0"
+          },
+          "pointsFor": { "formatted": "0" },
+          "pointsAgainst": { "formatted": "0" },
+          "streak": { "formatted": "-" },
+          "waiverPosition": 1,
+          "owners": [
+            {
+              "id": 1405028,
+              "displayName": "BigCurt",
+              "lastSeen": "1617048865000",
+              "initials": "B",
+              "lastSeenIso": "2021-03-29T20:14:25Z"
+            }
+          ],
+          "newItemCounts": { "activityUnread": 5 },
+          "initials": "BT",
+          "chatChannel": "/chats/MLB/leagues/24736/teams-139822-140146"
+        }
+      ]
+    }
+  ],
+  "season": 2021,
+  "league": {
+    "id": 24736,
+    "name": "Hardball Homies",
+    "sport": "MLB",
+    "logoUrl": "https://s3.amazonaws.com/fleaflicker/l24736_1_150x150.jpg",
+    "ownedTeam": {
+      "id": 139822,
+      "name": "Lonestar Tallboys: Reloaded",
+      "sport": "MLB",
+      "logoUrl": "https://s3.amazonaws.com/fleaflicker/t139822_1_150x150.jpg",
+      "recordOverall": { "winPercentage": { "formatted": ".000" }, "formatted": "0-0" },
+      "recordPostseason": {
+        "winPercentage": { "formatted": ".000" },
+        "formatted": "0-0"
+      },
+      "pointsFor": { "formatted": "0" },
+      "pointsAgainst": { "formatted": "0" },
+      "streak": { "formatted": "-" },
+      "waiverPosition": 5,
+      "initials": "LT"
+    },
+    "adFree": true,
+    "activeForCurrentSeason": true,
+    "draftStatus": "POST_DRAFT",
+    "membershipType": "CREATING_COMMISH",
+    "rosterRequirements": {
+      "positions": [
+        {
+          "label": "C",
+          "group": "START",
+          "eligibility": ["C"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_PURPLE"]
+        },
+        {
+          "label": "1B",
+          "group": "START",
+          "eligibility": ["1B"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_PURPLE"]
+        },
+        {
+          "label": "2B",
+          "group": "START",
+          "eligibility": ["2B"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_PURPLE"]
+        },
+        {
+          "label": "SS",
+          "group": "START",
+          "eligibility": ["SS"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_PURPLE"]
+        },
+        {
+          "label": "3B",
+          "group": "START",
+          "eligibility": ["3B"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_PURPLE"]
+        },
+        {
+          "label": "C/IF",
+          "group": "START",
+          "eligibility": ["C", "1B", "2B", "SS", "3B"],
+          "start": 3,
+          "colors": ["DRAFT_BOARD_PURPLE"]
+        },
+        {
+          "label": "LF",
+          "group": "START",
+          "eligibility": ["LF"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_BLUE"]
+        },
+        {
+          "label": "CF",
+          "group": "START",
+          "eligibility": ["CF"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_BLUE"]
+        },
+        {
+          "label": "RF",
+          "group": "START",
+          "eligibility": ["RF"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_BLUE"]
+        },
+        {
+          "label": "OF",
+          "group": "START",
+          "eligibility": ["LF", "CF", "RF"],
+          "start": 3,
+          "colors": ["DRAFT_BOARD_BLUE"]
+        },
+        {
+          "label": "DH",
+          "group": "START",
+          "eligibility": ["DH"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_PURPLE"]
+        },
+        {
+          "label": "UTIL",
+          "group": "START",
+          "eligibility": ["C", "1B", "2B", "SS", "3B", "LF", "CF", "RF", "DH"],
+          "start": 1,
+          "colors": ["DRAFT_BOARD_BLUE", "DRAFT_BOARD_PURPLE"]
+        },
+        {
+          "label": "SP",
+          "group": "START",
+          "eligibility": ["SP"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_GREEN"]
+        },
+        {
+          "label": "RP",
+          "group": "START",
+          "eligibility": ["RP"],
+          "max": 15,
+          "colors": ["DRAFT_BOARD_GREEN"]
+        },
+        {
+          "label": "P",
+          "group": "START",
+          "eligibility": ["SP", "RP"],
+          "start": 4,
+          "colors": ["DRAFT_BOARD_GREEN"]
+        },
+        {
+          "label": "IL",
+          "group": "INJURED",
+          "eligibility": [
+            "C",
+            "1B",
+            "2B",
+            "SS",
+            "3B",
+            "LF",
+            "CF",
+            "RF",
+            "DH",
+            "SP",
+            "RP"
+          ],
+          "start": 1,
+          "colors": ["DRAFT_BOARD_GREEN", "DRAFT_BOARD_BLUE", "DRAFT_BOARD_PURPLE"]
+        },
+        { "label": "BN", "max": 6 }
+      ],
+      "rosterSize": 17,
+      "starterCount": 11,
+      "benchCount": 6,
+      "reserveCount": 1,
+      "eligibility": ["C", "1B", "2B", "SS", "3B", "LF", "CF", "RF", "DH", "SP", "RP"]
+    },
+    "draftLiveTimeEpochMilli": "1617332400000",
+    "inviteUrl": "https://www.fleaflicker.com/mlb/leagues/24736/invited?eh\u003dd5f84163",
+    "size": 6,
+    "capacity": 8,
+    "initials": "HH",
+    "description": "8-Team Redraft",
+    "chatChannel": "/chats/MLB/leagues/24736/all",
+    "draftSecondsPerSelection": 60
+  }
+}
