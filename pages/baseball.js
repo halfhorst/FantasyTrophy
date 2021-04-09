@@ -1,45 +1,18 @@
 import { useState, useEffect, useMemo } from "react";
 import { useTable } from "react-table";
 import log from "loglevel";
-import { fetchLeagueActivity, fetchLeagueStandings } from "../utils/fleaflicker";
+import { fetchLeagueStandings } from "../utils/fleaflicker";
 
-import json_data from "../test/data/baseball/fetchLeagueStandings.json";
+// import json_standings from "../test/data/baseball/fetchLeagueStandings.json";
+// import json_activity from "../test/data/baseball/fetchLeagueActivity.json";
 
 // grandaddy react function component for /baseball
 function Baseball() {
   return (
     <div>
+      <title>Hardball Homies</title>
       <h1>Hardball Homies</h1>
       <LeagueStandings />
-      <LeagueActivity />
-    </div>
-  );
-}
-
-function LeagueActivity() {
-  // league activity react component
-  const [activity, setActivity] = useState("");
-  useEffect(() => {
-    async function getLeagueActivity() {
-      //  const league_activity = await fetchLeagueActivity({
-      //    sport: "MLB",
-      //    league_id: 24736,
-      //  })
-      //    .then((data) => {
-      //      return JSON.stringify(data.json());
-      //    })
-      //    .catch((error) => {
-      //      log.error(`Unable to fetch resource: ${error}`);
-      //    });
-      const league_activity = "foo";
-      setActivity(league_activity);
-    }
-    getLeagueActivity();
-  }, []);
-  return (
-    <div>
-      <h2>Around the league...</h2>
-      <div>{activity}</div>
     </div>
   );
 }
@@ -68,51 +41,56 @@ function LeagueStandings() {
       accessor: "waiver",
     },
   ]);
-  const data = useMemo(() =>
-    json_data.divisions[0].teams.map((team, index) => {
-      return {
-        place: index,
-        team: team.name,
-        record: team.recordOverall.formatted,
-        streak: team.streak.formatted,
-        waiver: team.waiverPosition,
-      };
-    })
+  const [standings, setStandings] = useState([]);
+  useEffect(() => {
+    async function getLeagueStandings() {
+      const league_standings = await fetchLeagueStandings({
+        sport: "MLB",
+        league_id: 24736,
+        season: 2021,
+      })
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          const league_standings = data.divisions[0].teams.map((team, index) => {
+            return {
+              place: index,
+              team: team.name,
+              record: team.recordOverall.formatted,
+              streak: team.streak.formatted,
+              waiver: team.waiverPosition,
+            };
+          });
+          return league_standings;
+        })
+        .catch((error) => {
+          log.error(`Unable to fetch resource: ${error}`);
+        });
+      setStandings(league_standings);
+    }
+    getLeagueStandings();
+  }, []);
+  return (
+    <div>
+      <h2>Standings</h2>
+      <Table columns={columns} data={standings} />
+    </div>
   );
-  const tableInstance = useTable({ columns, data });
+}
+
+function Table({ columns, data }) {
   const {
     getTableProps,
     getTableBodyProps,
     headerGroups,
     rows,
     prepareRow,
-  } = tableInstance;
-  // const [standings, setStandings] = useState([]);
-  // useEffect(() => {
-  //   async function getLeagueStandings() {
-  //     // const league_standings = await fetchLeagueStandings({
-  //     //   sport: "MLB",
-  //     //   league_id: 24736,
-  //     //   season: 2021,
-  //     // })
-  //     //   .then((response) => response.json())
-  //     //   .then((data) => {
-  //     //     let teams = data.divisions[0].teams[0].name;
-  //     //     console.log(teams);
-  //     //     return teams;
-  //     //   })
-  //     //   .catch((error) => {
-  //     //     log.error(`Unable to fetch resource: ${error}`);
-  //     //   });
-  //     setStandings(league_standings.divisions[0].teams[0].name);
-  //   }
-  //   getLeagueStandings();
-  // }, []);
+  } = useTable({ columns, data });
   return (
     <div>
-      <h2>Standings</h2>
-      <div>
-        <table {...getTableProps()}>
+      <div style={{ textAlign: "left" }}>
+        <table style={{ borderSpacing: "12px" }} {...getTableProps()}>
           <thead>
             {
               // Loop over the header rows

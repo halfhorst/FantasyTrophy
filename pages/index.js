@@ -1,14 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 function Home() {
   const [marmosetIsLoaded, setMarmosetIsLoaded] = useState(false);
-  useScript(
-    'https://viewer.marmoset.co/main/marmoset.js',
-    setMarmosetIsLoaded,
-  );
+  useScript("https://viewer.marmoset.co/main/marmoset.js", setMarmosetIsLoaded);
 
   return (
     <div>
+      <title>Hometown Homies</title>
       <div id="Viewer" />
       <Viewer marmosetIsLoaded={marmosetIsLoaded} />
     </div>
@@ -17,7 +15,7 @@ function Home() {
 
 const useScript = (url, callback) => {
   useEffect(() => {
-    const script = document.createElement('script');
+    const script = document.createElement("script");
     script.src = url;
     script.async = true;
     script.onload = () => callback(true);
@@ -38,16 +36,13 @@ function Viewer(props) {
   //     const port = 8000;
   //     const localSceneUrl = `http://localhost:${port}/public/scene.mview`
   // }
-  const remoteSceneUrl = 'https://fantasy-trophy.s3-us-west-2.amazonaws.com/scene.mview';
+  const remoteSceneUrl =
+    "https://fantasy-trophy.s3-us-west-2.amazonaws.com/scene.mview";
 
   const width = window.innerWidth / 2;
   const height = window.innerHeight - 20;
-  const myviewer = new window.marmoset.WebViewer(
-    width,
-    height,
-    remoteSceneUrl,
-  );
-  document.getElementById('Viewer').appendChild(myviewer.domRoot);
+  const myviewer = new window.marmoset.WebViewer(width, height, remoteSceneUrl);
+  document.getElementById("Viewer").appendChild(myviewer.domRoot);
   myviewer.loadScene();
 
   return null;
