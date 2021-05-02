@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { useTable } from "react-table";
 import log from "loglevel";
+import { Navigation } from "../utils/navigation"
 import { fetchLeagueStandings } from "../utils/fleaflicker";
 
 // import json_standings from "../test/data/baseball/fetchLeagueStandings.json";
@@ -11,6 +12,7 @@ function Baseball() {
   return (
     <div>
       <title>Hardball Homies</title>
+      <Navigation />
       <h1>Hardball Homies</h1>
       <LeagueStandings />
     </div>
