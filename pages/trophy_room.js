@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
+import * as THREE from 'three';
+import { Canvas, useFrame } from '@react-three/fiber'
 
 function TrophyRoom() {
 
@@ -14,9 +16,10 @@ function TrophyRoom() {
 
     return (
         <div>
-            <div id="viewerDiv" />
-            <MarmosetViewer marmosetIsLoaded={marmosetIsLoaded} />
-            <DetailsPanel />
+            {/* <div id="viewerDiv" /> */}
+            <Test></Test>
+            {/* <MarmosetViewer marmosetIsLoaded={marmosetIsLoaded} /> */}
+            {/* <DetailsPanel /> */}
         </div>
     );
 }
@@ -76,17 +79,64 @@ function MarmosetViewer(props) {
 
 function DetailsPanel(props) {
     return (
-        <div id="detailsPanel">
-            <ul>
-                <li>2020 - Cody W.</li>
-                <li>2019 - Peter</li>
-                <li>2018 - Cody W.</li>
-                <li>2017 - Marcus</li>
-                <li>2016 - Luke</li>
-            </ul>
+        // <div id="detailsPanel">
+        <ul>
+            <li>2020 - Cody W.</li>
+            <li>2019 - Peter</li>
+            <li>2018 - Cody W.</li>
+            <li>2017 - Marcus</li>
+            <li>2016 - Luke</li>
+        </ul>
+        // </div>
+    )
+}
+
+function Box(props) {
+    // This reference will give us direct access to the mesh
+    const mesh = useRef()
+    // Set up state for the hovered and active state
+    const [hovered, setHover] = useState(false)
+    const [active, setActive] = useState(false)
+    // Subscribe this component to the render-loop, rotate the mesh every frame
+    useFrame((state, delta) => (mesh.current.rotation.x += 0.01))
+    // Return view, these are regular three.js elements expressed in JSX
+    return (
+        <mesh
+            {...props}
+            ref={mesh}
+            scale={active ? 1.5 : 1}
+            onClick={(event) => setActive(!active)}
+            onPointerOver={(event) => setHover(true)}
+            onPointerOut={(event) => setHover(false)}
+        >
+            <boxGeometry args={[1, 1, 1]} />
+            <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
+        </mesh>
+    )
+}
+
+function Test(props) {
+    // const scene = new THREE.Scene();
+    // const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+    // const renderer = new THREE.WebGLRenderer();
+    // renderer.setSize(window.innerWidth, window.innerHeight);
+    // document.getElementById("viewerDiv").appendChild(renderer.domElement);
+    return (
+        <div class="container">
+            <div id="trophy-canvas">
+                <Canvas>
+                    <ambientLight />
+                    <pointLight position={[10, 10, 10]} />
+                    <Box position={[-1.2, 0, 0]} />
+                    <Box position={[1.2, 0, 0]} />
+                </Canvas>
+            </div>
+            <div id="trophy-details">
+                <DetailsPanel />
+            </div>
         </div>
     )
 }
 
-
-export default TrophyRoom;
+export default Test;
