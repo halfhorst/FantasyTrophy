@@ -77,17 +77,17 @@ function MarmosetViewer(props) {
 }
 
 
-function DetailsPanel(props) {
+function TrophyDetails(props) {
     return (
-        // <div id="detailsPanel">
-        <ul>
-            <li>2020 - Cody W.</li>
-            <li>2019 - Peter</li>
-            <li>2018 - Cody W.</li>
-            <li>2017 - Marcus</li>
-            <li>2016 - Luke</li>
-        </ul>
-        // </div>
+        <div id="details-container">
+            <ul>
+                <li>2020 - Cody W.</li>
+                <li>2019 - Peter</li>
+                <li>2018 - Cody W.</li>
+                <li>2017 - Marcus</li>
+                <li>2016 - Luke</li>
+            </ul>
+        </div>
     )
 }
 
@@ -123,8 +123,8 @@ function Test(props) {
     // renderer.setSize(window.innerWidth, window.innerHeight);
     // document.getElementById("viewerDiv").appendChild(renderer.domElement);
     return (
-        <div class="container">
-            <div id="trophy-canvas">
+        <div className="trophy-room-container">
+            <div className="bordered" id="trophy-canvas">
                 <Canvas>
                     <ambientLight />
                     <pointLight position={[10, 10, 10]} />
@@ -132,8 +132,8 @@ function Test(props) {
                     <Box position={[1.2, 0, 0]} />
                 </Canvas>
             </div>
-            <div id="trophy-details">
-                <DetailsPanel />
+            <div className="bordered" id="trophy-details">
+                <TrophyDetails />
             </div>
         </div>
     )

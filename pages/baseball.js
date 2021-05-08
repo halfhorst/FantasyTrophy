@@ -13,8 +13,10 @@ function Baseball() {
     <div>
       <title>Hardball Homies</title>
       <Navigation />
-      <h1>Hardball Homies</h1>
-      <LeagueStandings />
+      <div className="bordered" id="league-standings-container">
+        <h1>Hardball Homies</h1>
+        <LeagueStandings />
+      </div>
     </div>
   );
 }

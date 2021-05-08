@@ -4,7 +4,7 @@ import { Navigation } from "../utils/navigation";
 
 function Home() {
   return (
-    <div>
+    <div id="app-container">
       <title>Hometown Homies</title>
       <Navigation />
       <TrophyRoom />

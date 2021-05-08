@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export function Navigation(props) {
     return (
-        <nav>
+        <nav className="bordered">
             <Link href="/">
                 <a> Trophy Room </a>
             </Link>

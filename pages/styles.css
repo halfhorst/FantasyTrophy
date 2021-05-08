@@ -1,26 +1,89 @@
 body {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
-  padding: 20px 20px 60px;
+  /* padding: 20px 20px 60px; */
   /* max-width: 680px; */
   /* height: 100%;  */
-  height: auto;
-  width: auto;
+  height: 100vh;
+  /* min-height: 100vh;
+  min-height: -webkit-fill-available; */
+  width: 100vw;
   margin: 0 auto;
+  /* overflow: hidden; */
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
+#__next {
+  height: 100%;
+  width: 100%;
 }
+
+#app-container {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.bordered {
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 5px;
+}
+
+.trophy-room-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  max-width: 1500px;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 100%
+}
+
+#league-standings-container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px;
+
+}
+
 #trophy-canvas {
   width: 70%;
-  min-width: 640px;
+  height: 100%;
+  margin-right: 5px;
+  /* max-width:  */
+  /* min-width: 320px; */
 }
 
 #trophy-details {
-  /* width: 50%; */
-  width: auto;
-  margin: auto auto;
-  min-width: 360;
+  width: 30%;
+  margin-left: 5px;
+  /* width: auto; */
+  /* margin: auto auto; */
+  /* min-width: 320px; */
+}
+
+#details-container {
+
+}
+
+@media (max-width: 800px) {
+  .trophy-room-container {
+    flex-direction: column;
+  }
+
+  #trophy-canvas {
+    width: 100%;
+  }
+
+  #trophy-details {
+    width: 100%;
+  }
 }
